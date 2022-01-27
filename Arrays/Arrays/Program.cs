@@ -62,6 +62,51 @@ namespace Arrays
             Console.WriteLine("Ortalama : "+(toplam/diziUzunlugu));
 
 
+            // arrays metotları.
+
+            // sort sıralama
+
+
+            int[] sayilar = {23,12,17,55,42,7 };
+
+            Console.WriteLine("*****Sırasız dizi ****************");
+            foreach (var sayi in sayilar)
+            {
+                Console.WriteLine(sayi);
+            }
+
+            Console.WriteLine("*****Sıralı dizi ****************");
+
+            Array.Sort(sayilar);
+
+            foreach (var sayi in sayilar)
+            {
+                Console.WriteLine(sayi);
+            }
+
+            // clear : dizi sıfırlama
+
+            Array.Clear(sayilar,0,sayilar.Length);
+
+
+            // reverse : ters cevirme 
+
+
+            Array.Reverse(sayilar);
+
+
+            // IndexOf(): aranan verinin index nosunu getirir
+
+            Array.IndexOf(sayilar,12);
+
+
+            // Resize : yeniden boyutlandırma yapar.
+
+            Array.Resize<int>(ref sayiDizisi,9);
+
+
+
+
         }
     }
 }
