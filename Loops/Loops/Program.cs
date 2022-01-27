@@ -16,6 +16,12 @@ namespace Loops
 
             // ekrana girilen sayı kadar olan tek sayıları ekrana yazdır
 
+            /*
+             * for
+             * while
+             * do-while : şart ne olursa olsun bir defa da olsa çalışır
+             * foreach : dizi bazlı verileri gezmek için kullanılır
+            */
             Console.WriteLine("Bir sayı giriniz");
 
             int sayi = Convert.ToInt32(Console.ReadLine());
@@ -78,6 +84,31 @@ namespace Loops
                 }
                 Console.WriteLine(i);
             }
+
+            Console.WriteLine("*************************");
+
+
+
+            // while
+            // 1 den başlayarak consoldan girilen sayıya kadar ortalama hesaplayıp yazdıran program.
+            Console.WriteLine("Sayı giriniz");
+
+            int number = Convert.ToInt32(Console.ReadLine());
+            int toplam = 0;
+            int sayaç = 1;
+
+            while (sayaç<=number)
+            {
+                toplam += sayaç;
+                sayaç++;
+            }
+
+            Console.WriteLine("Ortalama : " +( toplam / number ));
+
+
+
+
+           
         }
     }
 }
